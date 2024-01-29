@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "tweet-scraper"
+version = "0.1.0"
+description = "A simple tweet scraper which saves to a database."
+authors = ["mitches-got-glitches <mitch.edmunds@proton.me>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+twitter-scraper-selenium = "^6.1.1"
+sqlmodel = "^0.0.14"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.0.0"
+
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "^1.5.3"
+mkdocs-material = "^9.5.6"
+
+
+[tool.poetry.group.nb.dependencies]
+ipykernel = "^6.29.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
